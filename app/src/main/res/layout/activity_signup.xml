@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstNameText"
+        android:hint="Sam"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/lastNameText"
+        android:layout_toStartOf="@+id/lastNameText" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lastNameText"
+        android:hint="Jones"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailText"
+        android:hint="email@email.com"
+        android:layout_below="@+id/firstNameText"
+        android:layout_alignLeft="@+id/firstNameText"
+        android:layout_alignStart="@+id/firstNameText"
+        android:layout_alignRight="@+id/lastNameText"
+        android:layout_alignEnd="@+id/lastNameText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordText"
+        android:hint="Password"
+        android:layout_below="@+id/emailText"
+        android:layout_alignLeft="@+id/emailText"
+        android:layout_alignStart="@+id/emailText"
+        android:layout_alignRight="@+id/emailText"
+        android:layout_alignEnd="@+id/emailText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Now!"
+        android:id="@+id/submitButton"
+        android:layout_below="@+id/passwordText"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
